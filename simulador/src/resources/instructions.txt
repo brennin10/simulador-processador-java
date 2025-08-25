@@ -1,0 +1,13 @@
+# Exemplo de instrucoes para o simulador
+# A primeira coluna e o opcode, as seguintes sao os operandos.
+
+# Instrucoes basicas
+add r2 r0 r1   # r2 = r0 + r1
+sub r3 r1 r0   # r3 = r1 - r0
+sw r3 4(r0)    # Salva o valor de r3 no endereco de memoria (r0 + 4)
+lw r4 4(r0)    # Carrega o valor do endereco (r0 + 4) para r4
+
+# Operadores de Desafio
+swap r0 r1     # Troca os valores de r0 e r1
+avg r5 r2 r3   # r5 = media de r2 e r3
+rev r6 r5      # Reverte a ordem dos bytes de r5 e salva em r6

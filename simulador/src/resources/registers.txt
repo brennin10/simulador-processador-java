@@ -1,0 +1,7 @@
+# Registradores iniciais
+r0 10
+r1 20
+r2 50
+r3 30
+r4 100
+r5 255
