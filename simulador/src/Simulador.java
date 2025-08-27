@@ -6,14 +6,14 @@ public class Simulador {
     private Registradores registradores;
     private Memoria memoria;
     private List<Instrucao> instructions;
-    private int programCounter; // Contador de programa
+    private int programCounter; 
 
     public Simulador(String instFile, String regFile, String memFile) {
         this.parser = new Parser();
         this.instructions = parser.parseInstructions(instFile);
         this.registradores = parser.parseRegisters(regFile);
         this.memoria = parser.parseMemory(memFile);
-        this.programCounter = 0; // Começa na primeira instrução
+        this.programCounter = 0; 
     }
 
     public void runPipeline() {
@@ -39,7 +39,7 @@ public class Simulador {
             // Estágio 5: WB - Escrita de Volta
             System.out.println("WB: Escrevendo resultado (se necessario)...");
             
-            programCounter++; // Avança para a próxima instrução
+            programCounter++; 
         }
         System.out.println("\nSimulacao concluida.");
         System.out.println(this.registradores); // Mostra o estado final dos registradores
